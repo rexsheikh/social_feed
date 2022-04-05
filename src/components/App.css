@@ -1,0 +1,18 @@
+.nav-bar {
+    background-color: white;
+    align-items: left;
+    color:black
+}
+
+.background{
+    background-color: #E2F2EE;
+}
+
+.create-post{
+  border: 2px solid;
+  border-radius: 0.5em;
+}
+
+.display-post{
+    border:
+}

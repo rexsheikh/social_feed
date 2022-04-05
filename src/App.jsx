@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CreatePost from './Components/CreatePost';
 import DisplayPosts from './Components/DisplayPosts';
 import NavBar from './Components/NavBar';
-import Post from './Components/Post';
+import './Components/App.css'
 
 
 function App() {
@@ -14,10 +14,22 @@ function App() {
   }
 
   return(
-    <div>
-      <NavBar />
-      <CreatePost addNewPost = {addNewPost}/>
-      <DisplayPosts parentPosts = {posts}/>
+    <div className = "container-fluid">
+      <div className = "row">
+        <div className='nav-bar'>
+          <NavBar />
+        </div>
+      </div>
+      <div className='background'>
+        <div className = "row">
+          <div className='create-post'>
+            <CreatePost addNewPost = {addNewPost}/>
+          </div>
+        </div>
+        <div className='row'> 
+          <DisplayPosts parentPosts = {posts}/>
+        </div>
+      </div>
     </div>
   );
 }
