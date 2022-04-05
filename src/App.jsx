@@ -6,9 +6,9 @@ import Post from './components/Post';
 
 
 function App() {
-  const [posts,setPosts] = useState([{name:"rex", post:" helloworld"}]);
+  const [posts,setPosts] = useState([{}]);
 
-  function addNewPost(post){
+  function addNewPost(post){   
     let tempPost = [post,...posts]
     setPosts(tempPost);
   }
@@ -16,8 +16,8 @@ function App() {
   return(
     <div>
       <NavBar />
-      <DisplayPosts parentPosts = {posts}/>
       <CreatePost addNewPost = {addNewPost}/>
+      <DisplayPosts parentPosts = {posts}/>
 
 
 
