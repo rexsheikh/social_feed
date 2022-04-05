@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
-
-
+import CreatePost from "./CreatePost";
 const Post = (props) => {
     return ( 
-        <h1></h1>
+        <div>
+            <h2> {props.name} {props.post} </h2>
+            <p> like and dislike buttons</p>
+        </div>
+        
      );
 }
  

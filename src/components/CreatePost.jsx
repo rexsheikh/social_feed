@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import Post from './Post';
+
+
 
 
 const CreatePost = (props) => {
@@ -17,10 +20,10 @@ const CreatePost = (props) => {
     return (  
         <form onSubmit={handleSubmit}>
             <label> Name </label>
-            <input type = "string" value={name} onChange = {(event) => setName(event.target.value)}/>
+            <input type = "text" value={props.name} onChange = {(event) => setName(event.target.value)}/>
             <label> Post </label>
-            <input type = "string" value={post} onChange = {(event) => setPost(event.target.value)}/>
-            <button tupe = "submit">Create</button>
+            <input type = "text" value={props.post} onChange = {(event) => setPost(event.target.value)}/>
+            <button type = "submit">Create</button>
         </form>
     );
 }

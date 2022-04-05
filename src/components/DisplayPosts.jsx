@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
+import Post from './Post';
+import CreatePost from './CreatePost';
 
 const DisplayPosts = (props) => {
-    const [posts,setPosts] = useState([{}]);
-
     return (  
         <div>
             {props.parentPosts.map((post) => {
                 return (
                     <p>
-                    {post.name}
-                    {post.post}
+                        <Post name = {post.name} post = {post.post} />
                     </p>
                 )
             })}

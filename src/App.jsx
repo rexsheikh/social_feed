@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import CreatePost from './components/CreatePost';
-import DisplayPosts from './components/DisplayPosts';
-import NavBar from './components/NavBar';
-import Post from './components/Post';
+import CreatePost from './Components/CreatePost';
+import DisplayPosts from './Components/DisplayPosts';
+import NavBar from './Components/NavBar';
+import Post from './Components/Post';
 
 
 function App() {
-  const [posts,setPosts] = useState([{}]);
+  const [posts,setPosts] = useState([]);
 
   function addNewPost(post){   
     let tempPost = [post,...posts]
@@ -18,9 +18,6 @@ function App() {
       <NavBar />
       <CreatePost addNewPost = {addNewPost}/>
       <DisplayPosts parentPosts = {posts}/>
-
-
-
     </div>
   );
 }
