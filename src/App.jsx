@@ -5,6 +5,7 @@ import NavBar from './Components/NavBar';
 import './Components/App.css'
 
 
+
 function App() {
   const [posts,setPosts] = useState([]);
 
@@ -15,19 +16,21 @@ function App() {
 
   return(
     <div className = "container-fluid">
-      <div className = "row">
-        <div className='nav-bar'>
-          <NavBar />
-        </div>
+      <div>
+        <NavBar />
       </div>
-      <div className='background'>
-        <div className = "row">
-          <div className='create-post'>
-            <CreatePost addNewPost = {addNewPost}/>
+      <div className='content-container'>
+        <div className='row'>
+          <div className='col'></div>
+          <div className='col-8'>
+            <div className='create-post-container' >
+              <CreatePost addNewPost = {addNewPost}/>
+            </div>
+            <div className='display-post'>
+              <DisplayPosts parentPosts = {posts}/>
+            </div>
           </div>
-        </div>
-        <div className='row'> 
-          <DisplayPosts parentPosts = {posts}/>
+          <div className='col'></div>
         </div>
       </div>
     </div>

@@ -1,18 +1,72 @@
 .nav-bar {
+    display:flex;
     background-color: white;
     align-items: left;
     color:black
 }
-
-.background{
+.feed{
+    color:gray
+}
+.content-container{
+    display: block;
     background-color: #E2F2EE;
+    width: auto;
+    height:100vh;
 }
 
-.create-post{
+.create-post-container{
+  display: block;
   border: 2px solid;
   border-radius: 0.5em;
+  margin-top:1rem;
+
+}
+.name-container{
+    display: block;
+
+}
+.name-label{
+    position: absolute;
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-top:0.5rem;
+}
+.post-label{
+    position:absolute;
+    margin-top: 1.8rem;
+    margin-left: 0.5rem;
+
+}
+.name-box {
+    border-radius:0.35rem;
+    width: 17rem;
+    margin-left: 3.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+.post-container{
+    display: block;
+    margin-top: 0.25rem;
+
+}
+.post-box {
+    display: inline-block;
+    border-radius: 0.35rem;
+    height: 5rem;
+    width: 17rem;
+    margin-left: 3.3rem;
+    margin-right: 3rem;
+
 }
 
+.create-button {
+    display: inline-block;
+    border-radius: 0.5rem;
+    background-color: rgb(43, 70, 220);
+    color: rgb(255, 255, 255);
+    margin-left: -0.5rem;
+    margin-bottom: 1rem;
+}
 .display-post{
     border: bisque
 }
