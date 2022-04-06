@@ -14,5 +14,18 @@
 }
 
 .display-post{
-    border:
+    border: bisque
+}
+
+.img-container{
+    background: #ccc;
+
+}
+
+.green-click{
+    filter: opacity(.5) drop-shadow(0 0 0 green);
+}
+
+.red-click{
+    filter: opacity(.5) drop-shadow(0 0 0 red);
 }
