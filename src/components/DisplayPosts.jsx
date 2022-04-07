@@ -7,9 +7,10 @@ const DisplayPosts = (props) => {
         <div>
             {props.parentPosts.map((post) => {
                 return (
-                    <p>
-                        <Post name = {post.name} post = {post.post} />
-                    </p>
+                    <div>
+                        <p><Post name = {post.name} post = {post.post} /></p>
+                    </div>
+                    
                 )
             })}
         </div>

@@ -38,17 +38,32 @@ const Post = (props) => {
 
     return ( 
         <div>
-            <p> {props.name}</p>
-            <p> {props.post}</p>
-            <p>{display_date}</p>
-            <div className = "image-container"> 
-                <button className= {greenButtonClass} onClick = {handleGreenClick}> 
-                    <img src= {thumbs_up} alt= "thumbs_up"/>
-                </button>
-                <button className={redButtonClass} onClick = {handleRedClick}>
-                 <img src={thumbs_down} alt= "thumbs_down" />
-                </button>
+            <div className='row'>
+                <div className='col'>
+                 <p className='display-name'> {props.name}</p>
+                </div>
+                <div className='col'>
+                 <p className='display-date'> {display_date} </p>
+                </div>
             </div>
+            <div className='row'>
+                <div className='col-9'>
+                    <p className='display-post-text'> {props.post} </p>
+                </div> 
+
+            </div>
+            <div className='row'>
+                <div className='col-9'> </div>  
+                <div className = 'col'>
+                    <button className= {greenButtonClass} onClick = {handleGreenClick}> 
+                        <img src= {thumbs_up} alt= "thumbs_up"/>
+                    </button>
+                    <button className={redButtonClass} onClick = {handleRedClick}>
+                    <img src={thumbs_down} alt= "thumbs_down" />
+                    </button>
+                </div>
+            </div>
+            
         </div>
         
      );

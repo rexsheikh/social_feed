@@ -16,13 +16,17 @@
 
 .create-post-container{
   display: block;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 0.5em;
   margin-top:1rem;
+  width: 45vw;
+  height: 22vh;
+  background-color: white;
 
 }
 .name-container{
     display: block;
+    margin-top:1rem;
 
 }
 .name-label{
@@ -39,41 +43,73 @@
 }
 .name-box {
     border-radius:0.35rem;
-    width: 17rem;
+    width: 33vw;
     margin-left: 3.3rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 }
 .post-container{
-    display: block;
+    display: flex;
     margin-top: 0.25rem;
 
 }
 .post-box {
     display: inline-block;
     border-radius: 0.35rem;
-    height: 5rem;
-    width: 17rem;
+    height: 10vh;
+    width: 33vw;
     margin-left: 3.3rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
+    resize: none;
+    overflow-y: scroll;
 
 }
 
 .create-button {
-    display: inline-block;
+    align-self: center;
     border-radius: 0.5rem;
     background-color: rgb(43, 70, 220);
     color: rgb(255, 255, 255);
-    margin-left: -0.5rem;
-    margin-bottom: 1rem;
+    
+}
+.display-name{
+    display: block;
+    margin-left: 0.5rem;
+
 }
 .display-post{
-    border: bisque
+    display: block;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid;
+    width: 45vw;
 }
 
-.img-container{
-    background: #ccc;
+.display-post-text{
+    display: inline-block;
+    margin-left: 0.5rem;
 
+}
+
+.display-date{
+    margin-left: 11rem;
+}
+
+
+.button-display{
+    background: white;
+
+}
+
+.post-separator{
+    background-color: #FFFFFF;
+    height: 0px;
+    width: 44.8vw;
+    border-style: solid;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: transparent;
 }
 
 .green-click{

@@ -22,7 +22,7 @@ function App() {
       <div className='content-container'>
         <div className='row'>
           <div className='col'></div>
-          <div className='col-8'>
+          <div className='col-6'>
             <div className='create-post-container' >
               <CreatePost addNewPost = {addNewPost}/>
             </div>
